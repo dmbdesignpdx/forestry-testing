@@ -141,10 +141,7 @@ Contents:
    "description":"{{ .Site.Author.title }}",
    "address":"{{ .Site.Author.city }}",
    "email":"{{ .Site.Author.email }}",
-   {{ if .Site.data }}
    "telephone":"+{{ replace .Site.Author.phone "-" "" }}"
-   {{ else }}
-   {{ end }}
 },
 "offers":{
    "@type":"Offer",
