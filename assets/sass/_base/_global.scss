@@ -1,0 +1,195 @@
+// Simple Grid
+
+[data-wrap], [data-grid] {
+   width: 100%;
+   padding-right: 18px;
+   padding-right: minmax(18px, safe-area-inset-right);
+   padding-left: 18px;
+   padding-left: minmax(18px, safe-area-inset-left);
+   margin: 0 auto
+}
+
+[data-grid] {
+   display: grid;
+   grid: none / repeat(12, 1fr);
+   grid-column-gap: 18px;
+   column-gap: 18px
+}
+
+[data-grid] > * {
+   grid-column: 1 / -1
+}
+
+
+// Resets and Normalizations
+
+*, *::before, *::after {
+   box-sizing: border-box
+}
+
+body, h1, h2, h3, h4, h5, h6, p, hr, figure, blockquote, summary, ol, ul, dl, dd, pre, table, th, td, tbody, tr, tfoot, thead, colgroup, iframe, textarea, button, fieldset, input, select, legend, dialog {
+   padding: 0;
+   margin: 0;
+   border: 0
+}
+
+input, select, textarea, button, progress, meter {
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+   outline: 0;
+}
+
+h1, h2, h3, h5, h6, input, select, button, textarea {
+   font: inherit
+}
+
+h1, h2, h3, h4, h5, h6 {
+   text-rendering: geometricPrecision;
+   line-height: 1.2
+}
+
+video, img, object, svg, iframe {
+   display: block
+}
+
+select, button, input[type=button], [role=button] {
+   box-sizing: content-box;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent
+}
+
+ol, ul {
+   list-style: none
+}
+
+li::before {
+   display: block;
+   content: "\200C";
+   font-size: 0
+}
+
+.clear::after {
+   display: table;
+   content: "";
+   clear: both
+}
+
+a, abbr {
+   text-decoration: none;
+   color: inherit
+}
+
+img, svg {
+   font-size: 0
+}
+
+a {
+   font-weight: bold;
+   color: inherit
+}
+
+p {
+   letter-spacing: 0.01em;
+   line-height: 1.5;
+   -ms-hyphens: none;
+   -moz-hyphens: none;
+   -webkit-hyphens: none;
+   hyphens: none
+}
+
+p.long {
+   text-rendering: optimizeSpeed
+}
+
+textarea {
+   resize: none
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0
+}
+
+
+// Phone Landscape
+@media (min-width:540px) {
+   
+}
+
+// Tablet Portrait
+@media (min-width:766px) {
+   
+   [data-wrap], [data-grid] {
+      padding-right: 24px;
+      padding-right: minmax(24px, safe-area-inset-right);
+      padding-left: 24px;
+      padding-left: minmax(24px, safe-area-inset-left);
+   }
+
+   [data-grid] {
+      grid-column-gap: 24px;
+      column-gap: 24px
+   }
+
+}
+
+// Tablet Landscape
+@media (min-width:1022px) {
+
+}
+
+// Desktop
+@media (min-width:1278px) {
+
+   html {
+      font-size: 20px
+   }
+
+   [data-wrap], [data-grid] {
+      width: 84%;
+      max-width: 1436px;
+      padding-right: 30px;
+      padding-right: minmax(30px, safe-area-inset-right);
+      padding-left: 30px;
+      padding-left: minmax(30px, safe-area-inset-left);
+   }
+
+   [data-grid] {
+      grid-column-gap: 30px;
+      column-gap: 30px
+   }
+
+}
+
+// Large Desktop
+@media (min-width:1680px) {
+
+   html {
+      font-size: 22px
+   }
+
+}
+
+
+// Browser Specific Rules
+
+// Chrome & Opera
+@supports (-webkit-app-region:drag) {
+
+}
+
+// Safari
+@supports (-webkit-marquee:revert) {
+
+}
+
+// Firefox
+@supports (-moz-orient:vertical) {
+
+}
+
+// Edge
+@supports (-ms-ime-align:auto) {
+
+}

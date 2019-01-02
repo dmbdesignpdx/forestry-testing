@@ -1,0 +1,21 @@
+languageCode: en-us
+baseURL: https://forestrytest.netlify.com
+title: Forestry Testing
+author:
+  name: Daniel Blake
+  title: Front End Web Developer
+  email: daniel@danielblake.design
+  phone: 971
+  city: City
+  github: https://github.com/
+  linkedin: https://www.linkedin.com/in/
+copyright: 2018 Test
+
+enableGitInfo: true
+disableHugoGeneratorInject: true
+disableKinds:
+- taxonomy
+- taxonomyTerm
+- RSS
+- robotsTXT
+enableEmoji: true

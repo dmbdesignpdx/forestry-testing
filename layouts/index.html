@@ -1,0 +1,15 @@
+{{ define "SITE" }}
+
+<header id="hero">
+
+  <h1>{{ .Params.hero.title }}</h1>
+
+  <p>{{ .Params.hero.copy }}</p>
+
+</header>
+
+{{ partialCached "nav.html" . }}
+
+{{ .Content }}
+
+{{ end }}
