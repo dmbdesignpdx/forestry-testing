@@ -1,17 +1,10 @@
 ---
-## Page Variables ##
 title: Forestry Testing
 description: Testing for Forestry CMS.
-
-
-## Params ##
-# Custom
 id: home
-
-# Hero
 hero:
-   title: Title to edit.
-   copy: Copy to edit.
----
+  title: This title has been edited!
+  copy: A quick brief on some important things.
 
-Main content here.
+---
+Lorem ipsum dolor set.
